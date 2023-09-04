@@ -1,0 +1,13 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer opened mode="over" #drawer class="example-sidenav" mode="side">
+    <app-nav-menu></app-nav-menu>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <app-toolbar [drawer]="drawer"></app-toolbar>
+
+    <main class="p-3">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</mat-drawer-container>

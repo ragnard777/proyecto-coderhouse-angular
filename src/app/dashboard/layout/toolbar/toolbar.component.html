@@ -1,0 +1,26 @@
+<mat-toolbar
+  class="flex justify-content-between align-items-center"
+  color="primary"
+>
+  <div style="display: flex; align-items: center">
+    <button
+      (click)="drawer?.toggle()"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Proyecto final</span>
+  </div>
+
+  <div style="display: flex; flex-direction: row">
+    <p *ngIf="authUser$ | async; let authUser" style="margin-right: 10px">
+      {{ authUser?.name }} {{ authUser?.surname }}
+    </p>
+    <!--   <div *ngIf="!(isAdmin$ | async); else admin">
+    </div> -->
+    <p *ngIf="!(isAdmin$ | async); else admin">Profesor</p>
+    <ng-template #admin>Administrador</ng-template>
+  </div>
+</mat-toolbar>

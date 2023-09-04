@@ -1,0 +1,83 @@
+{
+  "users": [
+    {
+      "name": "Miguelangel",
+      "surname": "Lugo",
+      "email": "mlugo2277@mail.com",
+      "password": "123456",
+      "token": "bG1Ptx4ZztwJwAoyjxQy",
+      "role": "ADMINISTRADOR",
+      "id": 1
+    },
+    {
+      "name": "naty",
+      "surname": "nat",
+      "email": "nathalie@mail.com",
+      "password": "123456",
+      "role": "USUARIO",
+      "token": "bG1Ptx4ZztwJwAoyjxQH",
+      "id": 2
+    },
+    {
+      "name": "Aranza",
+      "email": "aranza@gmail.com",
+      "password": "123456",
+      "surname": "Martinez",
+      "role": "ADMINISTRADOR",
+      "token": "PrK8GozKATSC8nXQaDJb",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Angular",
+      "description": "lorem ipsum",
+      "price": 1000,
+      "stock": 50,
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "Scrum master",
+      "description": "lorem ipsum",
+      "price": 500,
+      "stock": 25,
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "name": "Product Manager",
+      "description": "lorem ipsum",
+      "price": 800,
+      "stock": 15,
+      "categoryId": 2
+    }
+  ],
+  "buyers": [
+    {
+      "name": "Miguel Jose",
+      "surname": "Lugo",
+      "email": "mlugo@mail.com",
+      "id": 1
+    },
+    {
+      "name": "Maria",
+      "surname": "Lugo",
+      "email": "mariaLugo@mail.com",
+      "id": 2
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "productId": 2,
+      "buyerId": 1
+    },
+    {
+      "id": 2,
+      "productId": 3,
+      "buyerId": 2
+    }
+  ]
+}
